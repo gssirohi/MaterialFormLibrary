@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/field_property"
+                android:layout_width="wrap_content"
+                android:paddingLeft="4dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frame_field"
+                android:text="Required"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textColor="@android:color/darker_gray"
+        />
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/image_field"
+                android:padding="4dp"
+                android:tint="?attr/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+        android:src="@android:drawable/ic_dialog_email"/>
+        <FrameLayout
+                android:id="@+id/frame_field"
+                android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                android:layout_below="@+id/field_property"
+                     android:layout_toRightOf="@+id/image_field"
+                android:minHeight="32dp"
+                     android:layout_toLeftOf="@+id/right_indication"
+        >
+            <!--<include
+                layout="@layout/field_text_input"></include>
+             <include
+                layout="@layout/input_single_choice"></include>-->
+
+        </FrameLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:id="@+id/right_indication"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:paddingLeft="4dp"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:visibility="gone"
+                   android:tint="?attr/colorAccent"
+        android:src="@drawable/ic_keyboard_arrow_right"/>
+        <TextView
+                android:id="@+id/field_error"
+                android:layout_width="wrap_content"
+                android:paddingLeft="4dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_field"
+                android:layout_alignLeft="@+id/frame_field"
+                tools:text="Error message"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:visibility="gone"
+                android:textColor="@android:color/holo_red_light"
+        />
+    </RelativeLayout>
