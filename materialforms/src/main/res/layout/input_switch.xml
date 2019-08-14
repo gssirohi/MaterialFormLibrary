@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Switch android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/input_switch"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        style="@style/FieldValue"
+        tools:text="ksjdksjd ksjdskdj skdj skd j"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>

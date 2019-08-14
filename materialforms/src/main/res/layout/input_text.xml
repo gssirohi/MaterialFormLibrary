@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
-        android:id="@+id/text_single_choice"
+<EditText
+        android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:hint="Select value"
+        android:hint="Enter value"
         style="@style/FieldValue"
         xmlns:android="http://schemas.android.com/apk/res/android"/>

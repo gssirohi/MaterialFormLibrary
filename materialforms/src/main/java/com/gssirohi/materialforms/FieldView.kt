@@ -15,7 +15,7 @@ abstract class FieldView(val item:FormItem, ctx: Context): LinearLayout(ctx) {
     fun initView(){
         var view = View.inflate(context,R.layout.field_view_frame,null)
         if(item.field.isMandatory)
-        view.field_property.visibility = View.VISIBLE
+        view.field_label.text = item.field.label
         item.iconRes?.let{
             view.image_field.visibility = View.VISIBLE
             view.image_field.setImageResource(item.iconRes)

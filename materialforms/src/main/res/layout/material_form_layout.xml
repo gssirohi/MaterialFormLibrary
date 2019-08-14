@@ -22,25 +22,37 @@
             android:textStyle="bold"
             android:layout_gravity="center"
     />
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="8dp"
             android:layout_below="@+id/form_title"
             android:layout_above="@+id/frame_button">
-        <LinearLayout
-                android:id="@+id/item_container"
+        <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="8dp"
+                app:cardCornerRadius="8dp"
 
-        />
-    </android.support.v4.widget.NestedScrollView>
+        >
+            <LinearLayout
+                    android:id="@+id/item_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+
+            />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
 
     <FrameLayout
             android:id="@+id/frame_button"
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"
+            android:background="?attr/colorPrimary"
             android:layout_height="wrap_content">
         <Button
                 android:id="@+id/button_submit"

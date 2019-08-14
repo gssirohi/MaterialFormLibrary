@@ -6,16 +6,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <TextView
-                android:id="@+id/field_property"
+                android:id="@+id/field_label"
                 android:layout_width="wrap_content"
                 android:paddingLeft="4dp"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/frame_field"
-                android:text="Required"
-                android:textSize="8sp"
-                android:visibility="gone"
+                android:text="Label"
                 tools:visibility="visible"
-                android:textColor="@android:color/darker_gray"
         />
         <ImageView
                 android:layout_width="32dp"
@@ -31,14 +28,17 @@
                 android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:layout_centerVertical="true"
-                android:layout_below="@+id/field_property"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_below="@+id/field_label"
+                android:layout_marginTop="12dp"
                      android:layout_toRightOf="@+id/image_field"
                 android:minHeight="32dp"
                      android:layout_toLeftOf="@+id/right_indication"
         >
             <!--<include
-                layout="@layout/field_text_input"></include>
-             <include
+                layout="@layout/field_text_input"></include>-->
+             <!--<include
                 layout="@layout/input_single_choice"></include>-->
 
         </FrameLayout>
@@ -49,7 +49,7 @@
                    android:paddingLeft="4dp"
                    android:layout_centerVertical="true"
                    android:layout_alignParentRight="true"
-                   android:visibility="gone"
+                   android:visibility="invisible"
                    android:tint="?attr/colorAccent"
         android:src="@drawable/ic_keyboard_arrow_right"/>
         <TextView
